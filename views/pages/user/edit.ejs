@@ -1,0 +1,25 @@
+
+<% include ../../partials/header %>
+
+<br>
+<form action="/user/edit/<%= req.params.id %>" method="post">
+	<input type="hidden" name="id" value="<%= user.id %>">
+	name: <input name="name" value="<%=user.name%>"><br>
+	age: <input name="age" value="<%=user.age%>"><br>
+	<button type="submit">submit</button>
+</form>
+
+<% flash.forEach(function(v,i) {
+%>
+<div class="alert alert-<%- v.type %>">
+	<%- v.message %>
+</div>
+<%
+});
+flash.splice(0, flash.length);
+%>
+
+<br>
+<a href="/user">back to list</a>
+
+<% include ../../partials/footer %>

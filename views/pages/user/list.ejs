@@ -1,0 +1,24 @@
+<% include ../../partials/header %>
+
+<table class="table">
+	<thead>
+	<tr><th>Name</th><th>Age</th></tr>
+	</thead>
+	<tbody>
+	<% users.forEach(function(v) {  %>
+
+	<tr>
+		<td><%= v.name %></td>
+		<td><%= v.age %></td>
+		<td><a href="/user/edit/<%= v.id %>">edit</a></td>
+	</tr>
+
+
+	<% }); %>
+	</tbody>
+</table>
+<br>
+<a href="/user/add">add</a><br>
+
+<% include ../../partials/footer %>
+

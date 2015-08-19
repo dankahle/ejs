@@ -1,0 +1,32 @@
+.txt20 {
+  font-size: 20px;
+}
+.txt18 {
+  font-size: 18px;
+}
+.txt16 {
+  font-size: 16px;
+}
+.txt20b {
+  font-size: 20px;
+  font-weight: 500;
+}
+.txt18b {
+  font-size: 18px;
+  font-weight: 500;
+}
+.txt16b {
+  font-size: 16px;
+  font-weight: 500;
+}
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
+  display: none !important;
+}
+* {
+  box-sizing: border-box;
+}
